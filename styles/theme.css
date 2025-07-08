@@ -1,0 +1,114 @@
+
+/* Light Theme (Default) */
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --card-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --accent-bg: #f8f9fa;
+  --border-color: #e9ecef;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #4dabf7;
+  --primary-hover: #339af0;
+  --bg-color: #0f1419;
+  --text-color: #ffffff;
+  --text-secondary: #b3b3b3;
+  --card-bg: #1a1f2e;
+  --nav-bg: rgba(15, 20, 25, 0.95);
+  --accent-bg: #161b22;
+  --border-color: #30363d;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Theme toggle button specific styles */
+.theme-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1) rotate(15deg);
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .profile-img {
+  border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .profile-decoration {
+  border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .scroll-arrow {
+  background: var(--primary-color);
+}
+
+[data-theme="dark"] .scroll-arrow::after {
+  border-right-color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+[data-theme="dark"] .project-overlay {
+  background: rgba(77, 171, 247, 0.9);
+}
+
+[data-theme="dark"] .tag {
+  background: var(--accent-bg);
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .skill:hover {
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+
+[data-theme="dark"] .timeline-container::before {
+  background: var(--primary-color);
+}
+
+[data-theme="dark"] .timeline-marker {
+  background: var(--primary-color);
+  border-color: var(--bg-color);
+}
+
+/* Enhanced focus states for accessibility */
+.nav-link:focus,
+.btn:focus,
+.theme-toggle:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .profile-decoration {
+    animation: none;
+  }
+  
+  .scroll-arrow {
+    animation: none;
+  }
+}

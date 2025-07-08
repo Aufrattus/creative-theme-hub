@@ -1,0 +1,24 @@
+
+This folder contains placeholder images for the portfolio.
+
+Required images:
+- profile.jpg (350x350px) - Profile picture for hero section
+- about-me.jpg (500x600px) - About page image
+- project1.jpg (400x250px) - E-commerce platform project
+- project2.jpg (400x250px) - Task management app project  
+- project3.jpg (400x250px) - Mobile banking app project
+- project4.jpg (400x250px) - Brand identity design project
+- project5.jpg (400x250px) - Portfolio website project
+- project6.jpg (400x250px) - Social media dashboard project
+
+To use your own images:
+1. Replace these placeholder files with your actual project images
+2. Maintain the same file names or update the HTML references
+3. Optimize images for web (use JPEG for photos, PNG for graphics)
+4. Consider using WebP format for better compression
+
+Image optimization tips:
+- Compress images to reduce file size
+- Use appropriate dimensions for each use case
+- Consider using srcset for responsive images
+- Add alt text for accessibility

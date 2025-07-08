@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - John Doe Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/theme.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <h2>John Doe</h2>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link active">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle">
+            <span class="theme-icon">🌙</span>
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>My Projects</h1>
+        <p>A collection of work that showcases my skills and creativity</p>
+      </div>
+    </section>
+
+    <!-- Project Filter -->
+    <section class="project-filter">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-showcase">
+      <div class="container">
+        <div class="projects-grid">
+          <div class="project-card-large" data-category="web">
+            <div class="project-image">
+              <img src="assets/images/project1.jpg" alt="E-commerce Platform">
+              <div class="project-overlay">
+                <div class="project-details">
+                  <h3>E-commerce Platform</h3>
+                  <p>A full-featured e-commerce platform with payment integration, user authentication, and admin dashboard.</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                    <a href="#" class="btn btn-secondary">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Stripe API</span>
+              </div>
+              <h3>E-commerce Platform</h3>
+              <p>Modern e-commerce solution with advanced features</p>
+            </div>
+          </div>
+
+          <div class="project-card-large" data-category="web">
+            <div class="project-image">
+              <video autoplay muted loop>
+                <source src="assets/videos/project-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="project-overlay">
+                <div class="project-details">
+                  <h3>Task Management App</h3>
+                  <p>Collaborative task management application with real-time updates and team collaboration features.</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                    <a href="#" class="btn btn-secondary">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+              <h3>Task Management App</h3>
+              <p>Real-time collaborative task management</p>
+            </div>
+          </div>
+
+          <div class="project-card-large" data-category="mobile">
+            <div class="project-image">
+              <img src="assets/images/project3.jpg" alt="Mobile Banking App">
+              <div class="project-overlay">
+                <div class="project-details">
+                  <h3>Mobile Banking App</h3>
+                  <p>Secure mobile banking application with biometric authentication and transaction history.</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary">App Store</a>
+                    <a href="#" class="btn btn-secondary">Play Store</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <h3>Mobile Banking App</h3>
+              <p>Secure banking with modern UX</p>
+            </div>
+          </div>
+
+          <div class="project-card-large" data-category="design">
+            <div class="project-image">
+              <img src="assets/images/project4.jpg" alt="Brand Identity Design">
+              <div class="project-overlay">
+                <div class="project-details">
+                  <h3>Brand Identity Design</h3>
+                  <p>Complete brand identity design including logo, color palette, and marketing materials.</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary">View Case Study</a>
+                    <a href="#" class="btn btn-secondary">Behance</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Adobe Illustrator</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Brand Design</span>
+              </div>
+              <h3>Brand Identity Design</h3>
+              <p>Complete visual identity system</p>
+            </div>
+          </div>
+
+          <div class="project-card-large" data-category="web">
+            <div class="project-image">
+              <img src="assets/images/project5.jpg" alt="Portfolio Website">
+              <div class="project-overlay">
+                <div class="project-details">
+                  <h3>Portfolio Website</h3>
+                  <p>Responsive portfolio website with modern animations and interactive elements.</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary">Live Site</a>
+                    <a href="#" class="btn btn-secondary">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GSAP</span>
+              </div>
+              <h3>Portfolio Website</h3>
+              <p>Modern portfolio with animations</p>
+            </div>
+          </div>
+
+          <div class="project-card-large" data-category="web">
+            <div class="project-image">
+              <img src="assets/images/project6.jpg" alt="Social Media Dashboard">
+              <div class="project-overlay">
+                <div class="project-details">
+                  <h3>Social Media Dashboard</h3>
+                  <p>Analytics dashboard for social media management with real-time data visualization.</p>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-primary">Live Demo</a>
+                    <a href="#" class="btn btn-secondary">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">Express.js</span>
+              </div>
+              <h3>Social Media Dashboard</h3>
+              <p>Analytics and management platform</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h3>John Doe</h3>
+            <p>Full-Stack Developer & UI/UX Designer</p>
+          </div>
+          <div class="footer-right">
+            <div class="social-links">
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">GitHub</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Dribbble</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 John Doe. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/projects.js"></script>
+  </body>
+</html>

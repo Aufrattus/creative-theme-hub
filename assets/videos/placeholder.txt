@@ -1,0 +1,23 @@
+
+This folder contains placeholder videos for the portfolio.
+
+Required videos:
+- project-demo.mp4 - Task management app demonstration video
+
+Video specifications:
+- Format: MP4 (H.264 codec recommended)
+- Resolution: 1280x720 (720p) or higher
+- Duration: 10-30 seconds for demo videos
+- File size: Keep under 5MB for web performance
+
+To add your own videos:
+1. Replace placeholder files with your actual project videos
+2. Ensure videos are optimized for web playback
+3. Consider providing multiple formats (MP4, WebM) for better browser support
+4. Add poster images for better loading experience
+
+Video optimization tips:
+- Use web-optimized codecs (H.264 for MP4, VP9 for WebM)
+- Compress videos to balance quality and file size
+- Keep demo videos short and focused
+- Ensure videos are muted by default for autoplay
